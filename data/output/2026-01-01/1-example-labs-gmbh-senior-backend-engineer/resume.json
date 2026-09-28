@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "email": "alex@example.com",
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/alex-example"
+      }
+    ],
+    "location": "Berlin, Germany",
+    "name": "Alex Example",
+    "phone": "+49 000 000000"
+  },
+  "earlier_experience": null,
+  "education": [
+    {
+      "degree_line": "Bachelor of Science in Computer Science",
+      "details": [
+        "Completed coursework and a capstone project in distributed systems."
+      ],
+      "end_date": "2018",
+      "institution": "Example Technical University",
+      "start_date": "2014"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Example Labs GmbH",
+      "location": "Berlin, Germany",
+      "roles": [
+        {
+          "bullets": [
+            {
+              "fact_paths": [
+                "work[0].facts[0]"
+              ],
+              "text": "Reduced API response time by 35%."
+            },
+            {
+              "fact_paths": [
+                "work[0].facts[1]"
+              ],
+              "text": "Led technical planning for five engineers."
+            }
+          ],
+          "end_date": null,
+          "position": "Senior Software Engineer",
+          "start_date": "2021-04",
+          "tech_stack": [
+            "Python",
+            "PostgreSQL",
+            "Technical Leadership",
+            "System Design"
+          ],
+          "work_path": "work[0]"
+        }
+      ]
+    },
+    {
+      "company": "Sample Cloud AG",
+      "location": "Hamburg, Germany",
+      "roles": [
+        {
+          "bullets": [
+            {
+              "fact_paths": [
+                "work[1].facts[0]"
+              ],
+              "text": "Built event-driven services."
+            }
+          ],
+          "end_date": "2021-03",
+          "position": "Software Engineer",
+          "start_date": "2018-02",
+          "tech_stack": [
+            "Python",
+            "Kafka",
+            "AWS"
+          ],
+          "work_path": "work[1]"
+        }
+      ]
+    }
+  ],
+  "headline": {
+    "fact_paths": [
+      "work[0].facts[0]"
+    ],
+    "schema_version": 1,
+    "text": "Senior Backend Engineer"
+  },
+  "languages": [
+    {
+      "language": "English",
+      "level": "C1"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "schema_version": 3,
+  "skills": {
+    "schema_version": 2,
+    "skills": [
+      {
+        "canonical": "python",
+        "category": "technology",
+        "group": "Architecture & Backend",
+        "name": "Python"
+      }
+    ]
+  },
+  "summary": {
+    "fact_paths": [
+      "work[0].facts[0]"
+    ],
+    "text": "Improves reliable backend systems."
+  }
+}

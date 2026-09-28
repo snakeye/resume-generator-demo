@@ -1,0 +1,156 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{iftex}
+\ifPDFTeX
+\PackageError{resume-generator}{Resume PDF rendering requires xelatex}{Install xelatex and rerun rendering}
+\else
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\pretolerance=10000
+\tolerance=3000
+\emergencystretch=2em
+\IfFontExistsTF{Inter}{
+  \setmainfont{Inter}
+  \setsansfont{Inter}
+}{
+  \IfFontExistsTF{Noto Sans}{
+    \setmainfont{Noto Sans}
+    \setsansfont{Noto Sans}
+  }{
+    \setmainfont{Helvetica}
+    \setsansfont{Helvetica}
+  }
+}
+\renewcommand{\familydefault}{\sfdefault}
+\fi
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{needspace}
+\geometry{margin=0.85in}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.25em}
+\setlength{\parindent}{0pt}
+\newcommand{\ResumeSectionTopGap}{0.2em}
+\newcommand{\ResumeCompanyToRoleGap}{0.06em}
+\newcommand{\ResumeRoleToBulletsGap}{-0.05em}
+\newcommand{\ResumeBulletsToSkillsGap}{0.55em}
+\newcommand{\ResumeRoleBlockGap}{0.7em}
+\newcommand{\ResumeCompanyBlockGap}{0.85em}
+\newcommand{\ResumeCompanyLine}[1]{{\normalsize \textbf{#1}}\\}
+\newcommand{\ResumeRoleLine}[2]{{\small \noindent\textbf{#1} \hfill {\normalfont #2}}\\}
+\newcommand{\ResumeSkillsLine}[1]{{\small \textit{Skills: #1}}}
+\begin{document}
+\sloppy
+\begin{center}
+    {\LARGE \textbf{ Alex Example }}\\
+    Senior Backend Engineer \\
+    \vspace{0.3em}
+    Berlin, Germany ~|~
+    Phone: +49 000 000000 ~|~
+    Email: \href{mailto:alex@example.com}{alex@example.com} \\
+    LinkedIn: \href{https://www.linkedin.com/in/alex-example}{https://www.linkedin.com/in/alex-example}
+\end{center}
+
+\section*{Summary}
+Improves reliable backend systems.
+
+
+\section*{Skills \& Core Competencies}
+{\small
+\begin{itemize}
+
+    \item \textbf{ Architecture \& Backend }: Python
+
+\end{itemize}
+}
+
+
+
+\section*{Experience}
+\vspace{\ResumeSectionTopGap}
+
+\Needspace{10\baselineskip}
+\ResumeCompanyLine{ Example Labs GmbH — Berlin, Germany }
+\nopagebreak[4]
+\vspace{\ResumeCompanyToRoleGap}
+
+\Needspace{6\baselineskip}
+\nopagebreak[4]
+\ResumeRoleLine{ Senior Software Engineer }{ 2021-04 -- Present }
+\vspace{\ResumeRoleToBulletsGap}
+
+\begin{itemize}
+
+    \item Reduced API response time by 35\%.
+
+    \item Led technical planning for five engineers.
+
+\end{itemize}
+
+
+\vspace{\ResumeBulletsToSkillsGap}
+\ResumeSkillsLine{ Python, PostgreSQL, Technical Leadership, System Design }
+
+
+
+\vspace{\ResumeCompanyBlockGap}
+
+\Needspace{10\baselineskip}
+\ResumeCompanyLine{ Sample Cloud AG — Hamburg, Germany }
+\nopagebreak[4]
+\vspace{\ResumeCompanyToRoleGap}
+
+\Needspace{6\baselineskip}
+\nopagebreak[4]
+\ResumeRoleLine{ Software Engineer }{ 2018-02 -- 2021-03 }
+\vspace{\ResumeRoleToBulletsGap}
+
+\begin{itemize}
+
+    \item Built event-driven services.
+
+\end{itemize}
+
+
+\vspace{\ResumeBulletsToSkillsGap}
+\ResumeSkillsLine{ Python, Kafka, AWS }
+
+
+
+
+
+
+
+
+
+
+\Needspace{10\baselineskip}
+\section*{Education}
+
+\Needspace{6\baselineskip}
+\subsection*{ Example Technical University }
+\textbf{ Bachelor of Science in Computer Science }\hfill 2014 -- 2018\\
+\begin{itemize}
+    \item Completed coursework and a capstone project in distributed systems.
+\end{itemize}
+
+\vspace{1em}
+
+
+
+
+\section*{Languages}
+\begin{itemize}
+
+    \item English (C1)
+
+    \item German (B2)
+
+\end{itemize}
+
+\end{document}
