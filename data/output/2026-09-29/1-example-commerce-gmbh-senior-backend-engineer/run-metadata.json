@@ -1,0 +1,63 @@
+{
+  "completed_stages": [
+    "10-input",
+    "20-vacancy",
+    "30-terminology",
+    "40-evidence",
+    "50-selection",
+    "60-writing",
+    "70-skills",
+    "80-voice",
+    "90-assembly",
+    "100-validation",
+    "110-rendering",
+    "120-pdf-validation"
+  ],
+  "configuration_sha256": "2b31b3e1fef5f30b80dc9cde87fea32001d7630cd41c4f255f16d31f1a251424",
+  "contract_versions": {
+    "resume_request": 1
+  },
+  "created_at": "2026-09-29T09:24:25.966785+00:00",
+  "git_commit": "fda221e42a7f4c48a1d532fbebc8c7ab8af6d278",
+  "input_sha256": "01cc9d5d4af098eca21fe691088ea53f27cda03c9160475e7cf758245e920371",
+  "issue_number": 1,
+  "issue_sha256": "5d3c3073348fac409f11dacee0058d0d9bf85341045ddfc70cbe7499fadab94d",
+  "profile_sha256": "7810dbca6059316b0cf02398dce8389c8f0e5dc604631aba93ed1ec21ee288f8",
+  "prompt_sha256": "747068afdce950bb0169f80e9586d19a6da11dbbd0435b986a9029e3ee6fced8",
+  "prompt_versions": {
+    "bullet-generation/system.md": "86226fc49e0343bbe7fa9fe9223ff2c9c2465efb042abf4cc921a9c8072cf8a0",
+    "bullet-generation/task.md": "8ae669ee8303012e56c66dfa5d5a3242be2db7ed16e1b0ade3fef55dc76e58b7",
+    "evidence-matching/system.md": "794b01193431bafab528e5196680d7fe1da818f7576977bb0c08a552aedc48e5",
+    "evidence-matching/task.md": "90f2c1e6ad3503386df1e2ae26426b8c355a5790ce9c1e7c317d6eb381a8bf59",
+    "fact-selection/system.md": "bc31802e8ef1c7057dab2d5382a09e77261d163335ed1842b1e5ff77ee05df8a",
+    "fact-selection/task.md": "7f527e76bfc72bfd6ea33eb3e0d4762710c6bfdda24e72820d8b828f8971d024",
+    "headline-generation/system.md": "508aeb40578dd44854679d783a5ab75f00192ef17151afaafe2f965e710a670a",
+    "headline-generation/task.md": "66ae1fbeecdff8610078c723850bbe904999ed84cbdbfe93e5c54e9aa4645286",
+    "summary-generation/system.md": "aef20d17338955fc80f06760cb6e70e7a93d1dcf61adaa67911e9221e1781316",
+    "summary-generation/task.md": "1450eadbffedf32cd1dcf8d0c63c745fa5941721048332b551bedcd9e932804b",
+    "vacancy-analysis/system.md": "44eb452632066c2f387dc7987348e089dacf8539409afd7ab4dbc6aaee17c707",
+    "vacancy-analysis/task.md": "031f54b44d13940bf68fcdc4b605d6cd41a14833bde7562ce9551737a622f0d6",
+    "voice-adaptation/system.md": "85bdc8ff46c3566abde27e9fa19f46451a38c29ca1b73667bce510df07bb27a1",
+    "voice-adaptation/task.md": "80ee79a9f06ad617ee5c6575e172dc9cfb3f13a44e66cc8a0c4a20d1639d1018"
+  },
+  "provider": {
+    "model": "deepseek-chat",
+    "provider_name": "deepseek"
+  },
+  "run_date": "2026-09-29",
+  "run_id": "issue-1-20260929092425955080",
+  "schema_version": 1,
+  "schema_versions": {
+    "issue_form": 1,
+    "profile": 1,
+    "stage_artifact": 1
+  },
+  "toolchain_versions": {
+    "Jinja2": "3.1.6",
+    "PyYAML": "6.0.3",
+    "pydantic": "2.13.5",
+    "pydantic-settings": "2.15.0",
+    "python": "3.13.7",
+    "python-docx": "1.2.0"
+  }
+}

@@ -34,13 +34,13 @@
               "fact_paths": [
                 "work[0].facts[0]"
               ],
-              "text": "Reduced API response time by 35%."
+              "text": "Reduced API response time by 35% by profiling critical paths and redesigning database access."
             },
             {
               "fact_paths": [
                 "work[0].facts[1]"
               ],
-              "text": "Led technical planning for five engineers."
+              "text": "Led technical planning for a team of five engineers while continuing hands-on delivery."
             }
           ],
           "end_date": null,
@@ -66,7 +66,7 @@
               "fact_paths": [
                 "work[1].facts[0]"
               ],
-              "text": "Built event-driven services."
+              "text": "Built and operated event-driven services that process more than one million messages per day."
             }
           ],
           "end_date": "2021-03",
@@ -84,10 +84,11 @@
   ],
   "headline": {
     "fact_paths": [
-      "work[0].facts[0]"
+      "work[0].facts[0]",
+      "work[1].facts[0]"
     ],
     "schema_version": 1,
-    "text": "Senior Backend Engineer"
+    "text": "Senior Backend Engineer | API Performance | Event-Driven Services"
   },
   "languages": [
     {
@@ -108,13 +109,33 @@
         "category": "technology",
         "group": "Architecture & Backend",
         "name": "Python"
+      },
+      {
+        "canonical": "postgresql",
+        "category": "technology",
+        "group": "Architecture & Backend",
+        "name": "PostgreSQL"
+      },
+      {
+        "canonical": "apache kafka",
+        "category": "technology",
+        "group": "Platform, Data & Reliability",
+        "name": "Kafka"
+      },
+      {
+        "canonical": "aws",
+        "category": "technology",
+        "group": "Platform, Data & Reliability",
+        "name": "AWS"
       }
     ]
   },
   "summary": {
     "fact_paths": [
-      "work[0].facts[0]"
+      "work[0].facts[0]",
+      "work[0].facts[1]",
+      "work[1].facts[0]"
     ],
-    "text": "Improves reliable backend systems."
+    "text": "Senior Software Engineer with experience building and operating production backend systems, including event-driven services that handle over one million messages per day. Reduced API response time by 35% by profiling critical paths and redesigning database access. Led technical planning for a team of five engineers while continuing hands-on delivery."
   }
 }
